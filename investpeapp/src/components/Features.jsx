@@ -6,6 +6,12 @@ import iphone from '../images/Iphone.png'
 import my from '../images/my.png'
 import bounce from '../images/bounce.png'
 import apple from '../images/apple.png'
+import myntra from '../images/myntra.png'
+import amazon from '../images/amazon.png'
+import croma from '../images/croma.png'
+import caratlane from '../images/caratlane.png'
+import easemytrip from '../images/easemytrip.png'
+import pepperfry from '../images/pepperfry.png'
 
 export default function Features() {
   return (
@@ -23,6 +29,12 @@ export default function Features() {
             <img src={my} />
             <img src={bounce} />
             <img src={apple}/>
+            <img src={myntra} />
+            <img src={amazon}/>
+            <img src={croma}/>
+            <img src={caratlane}/>
+            <img src={easemytrip}/>
+            <img src={pepperfry}/>
             <div>
                 <img src={bike} />
                 <div>
