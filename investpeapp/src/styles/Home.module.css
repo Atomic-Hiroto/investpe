@@ -393,3 +393,45 @@ body {
     margin-top: 50px;
     color: #cccccc;
 }
+
+@media (max-width:800px){
+    .nav {
+        padding-right: 40px;
+    }
+    .nav > div:nth-of-type(2){
+        display: none;
+    }
+    .hero h2{
+        font-size: 25px;
+    }
+    .hero p{
+        font-size: 15px;
+        margin: 10px 20px;
+        text-align: center;
+    }
+    .hero img{
+        width: 95%;
+        margin-top: 50px;
+    }
+    .features {
+        flex-direction: column;
+        margin: 5px;
+    }
+    .features > div{
+        width: 90%;
+    }
+    .features > div:last-of-type{
+        gap:0px;
+        transform: translate(28px);
+    }
+    .features > div:last-of-type > div{
+        scale: 0.8;
+    }
+    .features >div> img{
+        display: none;
+    }
+    .footer > div:first-of-type{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
