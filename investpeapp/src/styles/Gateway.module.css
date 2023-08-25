@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+}
+
+/* Basic config */
+@font-face {
+    font-family: 'Gilroy-ExtraBold';
+    src: url('../fonts/Gilroy-ExtraBold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('../fonts/Gilroy-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('../fonts/Gilroy-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('../fonts/Gilroy-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('../fonts/Gilroy-Regular.ttf') format('truetype');
+}
+
+/* Nav */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #171e27;
+    color: white;
+    font-family: 'Gilroy-Light';
+    border-bottom: 1px solid #292929;
+    z-index: 2;
+    position: relative;
+}
+
+.nav img {
+    width: 280px;
+    object-fit: contain;
+    margin: -60px 0px;
+    cursor: pointer;
+}
+
+.nav > div:first-of-type{
+    display: flex;
+    align-items: center;
+}
+.nav > div:first-of-type > button{
+    background-color: #FDECEC;
+    border-radius: 35px;
+    border: 0;
+    color: #F05656;
+    padding: 14px 21px;
+}
+
+.nav > div:nth-of-type(2){
+    display: flex;
+    gap:20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav > div:nth-of-type(2) svg{
+    position: relative;
+    top:4px;
+    left: 4px;
+}
+
+.dropdown-content {
+    position: absolute;
+    display: flex;
+    top:80px;
+    left:200px;
+    color: black;
+    padding:15px 60px 30px 60px;
+    justify-content: space-between;
+    background-color: white;
+    width:65%;
+    border: 1px solid lightgray;
+    z-index: 1;
+}
+
+.dropdown-content h2{
+    color: #28B570;
+}
+.dropdown-content > div{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+.dropdown-content > div > div{
+    display: flex;
+    align-items: center;
+    gap:25px;
+}
+.dropdown-content h2{
+    margin: 0px;
+    margin-top: 10px;
+}
+.dropdown-content > div img{
+    width: 64px;
+    height: 64px;
+}
+.dropdown-content p{
+    margin: 2px;
+}
+.dropdown-content > div > div p:first-of-type{
+    font-family: 'Gilroy-Medium';
+}
