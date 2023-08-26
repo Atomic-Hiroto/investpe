@@ -251,7 +251,14 @@ body {
     display: flex;
     justify-content: center;
     font-family: 'Gilroy-Light';
+    margin-top: -249px;
+    background-color: white;
+    position: relative;
+    padding-top: 100px;
+    z-index: 2;
 }
+
+
 
 .banner > div{
     border-radius: 100px;
@@ -288,4 +295,39 @@ body {
     position: relative;
     bottom: -85px;
     right: 0px;
+}
+
+/* Partner */
+
+.partner{
+    margin: 0px 80px;
+    padding-top: 100px;
+    border-top: 1px solid #777;
+}
+.partner > div{
+    display: flex;
+    justify-content: space-between;
+    gap:20px
+}   
+.partner > div > div:first-of-type{
+    width: 55%;
+    font-family: 'Gilroy-Regular';
+    color: #777;
+    font-size: 20px;
+}
+.partner > div > div:last-of-type{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap:20px;
+}
+.partner > div img{
+    width: 100%;
+}
+.partner > div > div:last-of-type > div{
+    background-color: #B1B1B1;
+    padding: 15px 20px;
+    border-radius: 20px;
 }
