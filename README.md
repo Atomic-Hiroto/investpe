@@ -1,6 +1,8 @@
 # Investpe
 Investpe is a beautiful frontend for an investment web app, created with React.
 
+Use the Login button to access the gateway page and click on the Logo to come back.
+
 ## Overview
 I started by building the ticker and navbar/footer since these elements are shared across pages.
 
