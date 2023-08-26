@@ -300,7 +300,7 @@ body {
 /* Partner */
 
 .partner{
-    margin: 0px 80px;
+    margin: 50px 80px;
     padding-top: 100px;
     border-top: 1px solid #777;
 }
@@ -331,3 +331,48 @@ body {
     padding: 15px 20px;
     border-radius: 20px;
 }
+
+@media screen AND (max-width:800px) {
+    .nav{
+        flex-direction: column;
+    }
+    .nav>div:first-of-type>button {
+        padding: 4px 11px;
+    }
+    .dropdown-content {
+        flex-wrap: wrap;
+        top:130px;
+        left: 5px;
+    }
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: -80px;
+    }
+    .hero > div{
+        width: 90%;
+    }
+    .hero>div:last-of-type>button {
+        width: 70%;
+        margin: auto;
+    }
+    .cards {
+        scale: 0.5;
+    }
+    .banner > div{
+        flex-direction: column;
+    }
+    .partner{
+        margin: 20px;
+    }
+    .partner > div > div:first-of-type{
+        width: 100%;
+    }
+    .partner > div{
+        flex-direction: column;
+    }
+    .partner > div > div:last-of-type{
+        grid-template-columns: repeat(2,1fr);
+    }
+}   

@@ -52,6 +52,10 @@ body {
     white-space: nowrap;
 }
 
+.tickeritems::-webkit-scrollbar { 
+    display: none; 
+}
+
 .tickeritems>div>span:first-of-type {
     font-weight: bolder;
 }
@@ -224,6 +228,7 @@ body {
     background: linear-gradient(#454747 80%, #5D5F5FF5 80%, #3B3B3C 81%);
     display: flex;
     border-radius: 12px;
+    margin-right: 40px;
     width: 326px;
     height: 151px;
     padding: 10px;
@@ -397,6 +402,8 @@ body {
 @media (max-width:800px){
     .nav {
         padding-right: 40px;
+        flex-direction: column;
+        padding: 10px;
     }
     .nav > div:nth-of-type(2){
         display: none;
@@ -429,6 +436,12 @@ body {
     }
     .features >div> img{
         display: none;
+    }
+    .footer{
+        padding: 25px;
+    }
+    .footer > img {
+        margin-top: -50px;
     }
     .footer > div:first-of-type{
         flex-direction: column;
