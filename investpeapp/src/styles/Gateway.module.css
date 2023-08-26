@@ -85,7 +85,7 @@ body {
     background-color: white;
     width: 65%;
     border: 1px solid lightgray;
-    z-index: 1;
+    z-index: 10;
 }
 
 .dropdown-content h2 {
@@ -236,13 +236,56 @@ body {
 
 
 .cards>div:nth-child(3) {
-    z-index: 3;
+    z-index: 1;
 }
 
 .cards>div:nth-child(2) {
-    z-index: 2;
+    z-index: 1;
 }
-
 .cards>div:nth-child(1) {
     z-index: 1;
+}
+
+/* Banner */
+.banner{
+    display: flex;
+    justify-content: center;
+    font-family: 'Gilroy-Light';
+}
+
+.banner > div{
+    border-radius: 100px;
+    background: #171E27;
+    width: 80%;
+    padding: 80px;
+    display: flex;
+}
+
+.banner > div:first-of-type > div > p:first-of-type{
+    color: white;
+    font-size: 45px;
+    font-family: 'Gilroy-Bold';
+    margin: 0px;
+}
+
+.banner > div:first-of-type > div > p:nth-of-type(2){
+    color: #CECECE;
+    font-size: 20px;
+    margin: 5px 0px;
+}
+
+.banner > div:first-of-type > div button{
+    border-radius: 35px;
+    background: linear-gradient(99deg, #FEC826 0%, #F3A61D 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 14px 29px;
+    border: 0px;
+    margin-top: 20px;
+}
+
+.banner > div > div:last-of-type > img{
+    width: 450px;
+    position: relative;
+    bottom: -85px;
+    right: 0px;
 }
